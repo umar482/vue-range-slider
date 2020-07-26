@@ -80,7 +80,7 @@ function prefixStyle(style) {
 }
 function addEvent(el, type, fn, capture) {
   el.addEventListener(type, fn, {
-    passive: false,
+    passive: true,
     capture: !!capture
   });
 }
